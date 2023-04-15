@@ -1,0 +1,440 @@
+*{
+    margin: auto;
+}
+body
+{
+    margin: auto;
+    background-color: skyblue;
+    size: initial;
+}
+#container
+{
+    width: 100%;
+    min-height: auto;
+    margin: auto;
+    background-color: skyblue;
+}
+#header
+{
+    width: 100%;
+    height: 70px;
+    background: orange;
+    border-radius: 30px;
+}
+#header .h1
+{
+    width: 30%;
+    height: 70px;
+    float: left;
+    line-height: 70px;
+}
+#header .h2
+{
+    width: 70%;
+    height: 70px;
+    float: left;
+    line-height: 70px;
+    text-align: center;
+}
+#menu
+{
+    width: 100%;
+    height: 70px;
+    background-color: green; 
+    border-radius: 30px;
+}
+#menu table
+{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+#menu table tr td:hover
+{
+    background-color:darkgray;
+    border-radius: 20px;
+    font-size: 30px;
+}
+.slider
+{
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+}
+.slider figure div
+{
+    float: left;
+    width: 20%;
+}
+.slider figure img
+{
+    width: 100%;
+    float: left;
+    background-size: cover;
+}
+.slider figure
+{
+    position: relative;
+    width: 500%;
+    scroll-behavior: all;
+    margin: 0px;
+    left:0px;
+    animation: 20s suraj infinite;
+}
+@keyframes suraj
+{
+    0%{
+       left: 0%;
+    }
+    5%{
+        left: 0%;
+    }
+    10%{
+        left: -100%;
+    }
+    15%{
+        left: -100%;
+    }
+    20%{
+        left: -200%;
+    }
+    25%{
+        left: -200%;
+    }
+    30%{
+        left: -300%;
+    }
+    35%{
+        left: -300%;
+    }
+    40%{
+        left: -400%;
+    }
+    45%{
+        left: -400%;
+    }
+    70%{
+        left: -300%;
+    }
+    75%{
+        left: -300%;
+    }
+    80%{
+        left: -200%;
+    }
+    85%{
+        left: -200%;
+    }
+    90%{
+        left: -100%;
+    }
+    92%{
+        left: -100%;
+    }
+    95%{
+        left: 0%;
+    }
+}
+#about .p2
+{
+    width: 100%;
+    min-height:400px;   
+}
+#about .p2 .h
+{
+    padding-left: 690px;
+    color: red;
+    text-decoration: underline;
+    padding-top: 180px;
+    font-size: xx-large;
+    text-align: center;
+}
+#about .p2 .p
+{
+    padding-left: 700px;
+    padding-top: 20px;
+    font-size: larger;
+}
+#about
+{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    padding-top:20px ;
+}
+
+#box2
+{
+    width: 100%;
+    height: 600px;
+}
+#box2 .p1 .v1
+{
+    width: 50%;
+    height: 600px;
+    float: left;
+}
+#box2 .p2 .v1
+{
+    width: 50%;
+    height: 600px;
+    float: left;
+}
+#box3
+{
+    width: 100%;
+    height: 300px;
+}
+#box3 .p1
+{
+    width: 25%;
+    height: 300px;
+    float: left;
+    border-radius: 50%;
+    background-color: pink;
+    text-align: center;
+}
+#box3 .p1 h2
+{
+    padding-left: 20px;
+    padding-top: 90px;
+    font-size: 40px;
+}
+#box3 .p1 ul ul
+{
+    visibility: hidden;    
+}
+#box3 .p1 ul li:hover ul
+{
+    visibility: visible;
+}
+#box3 .p1 ul ul li
+{
+    background: none;
+}
+#box3 .p1 ul li
+{
+    list-style: none;
+    padding-right: 30px;
+    font-size: 20px;
+}
+#box3 .p1 ul li a
+{
+    text-decoration: none; 
+}
+#box3 .p1 ul ul
+{
+    visibility: hidden;
+}
+#box3 .p1 ul li:hover ul
+{
+    visibility: visible;
+    background-color: white;
+    color: white;
+}
+#box3 .p2
+{
+    width: 25%;
+    height: 300px;
+    float: left;
+    border-radius: 50%;
+    background-color: pink;
+    text-align: center;
+}
+#box3 .p2 h2
+{
+    padding-left: 10px;
+    padding-top: 90px;
+    font-size: 40px;
+}
+#box3 .p2 ul li
+{
+    list-style: none;
+    padding-right: 30px;
+    font-size: 20px;
+}
+#box3 .p2 ul li a
+{
+    text-decoration: none;   
+}
+#box3 .p3
+{
+    width: 25%;
+    min-height: 300px;
+    float: left;
+    border-radius: 50%;
+    background-color: pink;
+    text-align: center;
+}
+#box3 .p3 h2
+{
+    padding-left: 10px;
+    padding-top: 90px;
+    font-size: 40px;
+}
+#box3 .p3 ul li
+{
+    list-style: none;
+    padding-right: 30px;
+    font-size: 20px;
+}
+#box3 .p3 ul li a
+{
+    text-decoration: none; 
+}
+#box3 .p4
+{
+    width: 25%;
+    height: 300px;
+    float: left;
+    border-radius: 50%;
+    background-color: pink;
+    text-align: center;
+}
+#box3 .p4 h2
+{
+    padding-left: 10px;
+    padding-top: 90px;
+    font-size: 40px;
+}
+#box3 .p4 ul li
+{
+    list-style: none;
+    padding-right: 30px;
+    font-size: 20px;
+}
+#box3 .p4 ul li a
+{
+    text-decoration: none; 
+    padding-top: 20px;
+}
+#box4 
+{
+    width: 100%;
+    height: 300px;
+}
+#box4 .p1
+{
+    width: 25%;
+    height: 300px;
+    float: left;
+    border-radius: 50%;
+    background-color: pink;
+    text-align: center;
+}
+#box4 .p1 h2
+{
+    padding-left: 6px;
+    font-size: 40px;
+    padding-top: 90px;
+}
+#box4 .p1 ul li
+{
+    list-style: none;
+    padding-right: 30px;
+    font-size: 20px;
+}
+#box4 .p1 ul li a
+{
+    text-decoration: none; 
+}
+#box4 .p2
+{
+    width: 25%;
+    height: 300px;
+    float: left;
+    border-radius: 50%;
+    background-color: pink;
+    text-align: center;
+}
+#box4 .p2 h2
+{
+    padding-left: 10px;
+    font-size: 40px;
+    padding-top: 90px;
+}
+#box4 .p2 ul li
+{
+    list-style: none;
+    padding-right: 30px;
+    font-size: 20px;
+}
+#box4 .p2 ul li a
+{
+    text-decoration: none;
+}
+#box4 .p3
+{
+    width: 25%;
+    height: 300px;
+    float: left;
+    border-radius: 50%;
+    background-color: pink;
+    text-align: center;
+}
+#box4 .p3 h2
+{
+    padding-left: 10px;
+    font-size: 40px;
+    padding-top: 90px;
+}
+#box4 .p3 ul li
+{
+    list-style: none;
+    padding-right: 30px;
+    font-size: 20px;
+}
+#box4 .p3 ul li a
+{
+    text-decoration: none; 
+}
+#box4 .p4
+{
+    width: 25%;
+    height: 300px;
+    float: left;
+    border-radius: 50%;
+    background-color: pink;
+    text-align: center;
+}
+#box4 .p4 h2
+{
+    padding-left: 10px;
+    font-size: 40px;
+    padding-top: 90px;
+}
+#box4 .p4 ul li
+{
+    list-style: none;
+    padding-right: 30px;
+    font-size: 20px;
+}
+#box4 .p4 ul li a
+{
+    text-decoration: none; 
+}
+
+#footer
+{
+    width: 100%;
+    height: 70px;
+    background-color: orange;
+}
+#footer p
+{
+    font-size: 20px;
+    line-height: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,131 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-size: 15px;
+	overflow-x: hidden; 
+	color: white;
+	font-family: 'Flamenco', cursive;
+}
+.bgimg{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/header1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	width: 100%;
+	height: 660px;
+}
+.nav-item{
+	padding: 12px;
+}
+.nav-link:hover{
+	border-bottom: 2px solid blue;
+}
+.headerset{
+	padding-top: 250px;
+	box-sizing: border-box;
+}
+.headerset h2{
+	font-size: 42px;
+}
+.headerset h1{
+	font-size: 62px;
+	font-weight: bold;
+}
+
+.mobile-icon{
+	display: none;
+}
+/*
+..................ourservices................*/
+
+.ourservices{
+	padding: 100px 0px 60px;
+	height: 700px;
+}
+.rowsetting{
+	margin: 80px 0px;
+
+}
+.imgsetting{
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	font-size: 60px;
+
+}
+.rowsetting h2 a{
+	padding-top: 20px;
+	font-size: 30px;
+	font-weight: bold;
+}
+.rowsetting p{
+	color: #6c757d!important;
+	padding: 10px;
+}
+.Education{
+	height: 700px;
+	width: 100%;
+	padding: 100px 0px 50px;
+}
+.Education h1{
+	font-size: 50px;
+	font-weight: bold;
+
+}
+.Hospital{
+	height: 700px;
+	width: 100%;
+	padding: 100px 0px 50px;
+}
+.Hospital h1{
+	font-size: 50px;
+	font-weight: bold;
+
+}
+
+
+
+@media only screen and (max-width: 768px){
+	h1{font-size: 180%;}
+
+	.navbar-nav{display: none;}
+
+	.mobile-icon{
+		display: inline-block;
+		color: #fff;
+		float: right;
+		margin-top: 60px;
+		margin-right: 20px;
+	}
+	.navbar-nav{float: left;}
+
+	.nav-item{
+		display: block;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	h1{
+		font-size: 100%;
+	}
+	.navbar-nav{display: none;}
+
+	.mobile-icon{
+		display: inline-block;
+		color: #fff;
+		float: right;
+		margin-top: 30px;
+		margin-right: 20px;
+	}
+	.navbar-nav{float: left;}
+
+	.nav-item{
+		display: block;
+		margin-top: 10px;
+	}
+}
+

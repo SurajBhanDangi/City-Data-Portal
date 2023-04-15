@@ -1,0 +1,34 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden; 
+  color: white;
+  font-family: 'Flamenco';
+  background-color: #fff;
+}
+.nav-link:hover{
+  border-bottom: 2px solid white;
+}
+.nap{
+  background: rgba(94,84,243,1);
+  background: -moz-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(94,84,243,1)), color-stop(100%, rgba(101,216,239,1)));
+  background: -webkit-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+  background: -o-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+  background: -ms-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+  background: linear-gradient(to right, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+}
+.carousel-inner img{
+
+  width: 100%;
+  height: 100%;
+}
+#more{
+  display: none;
+}
+
+

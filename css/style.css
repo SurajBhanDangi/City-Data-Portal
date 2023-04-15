@@ -1,0 +1,28 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	
+}
+body{
+	font-size: 20px;
+	overflow-x: hidden; 
+	color: white;
+	font-family: 'Flamenco';
+}
+.header{
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../images/edu.jpeg');
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.headerset{
+	padding-top: 250px;
+	box-sizing: border-box;
+}
+.headerset h2{
+	font-size: 42px;
+}
+.headerset h1{
+	font-size: 62px;
+	font-weight: bold;
+}
