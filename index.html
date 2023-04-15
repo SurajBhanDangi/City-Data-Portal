@@ -2,156 +2,476 @@
 <html>
 <head>
 	<title>Welcome To City Data Portal</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="icon/png" href="images/icon.png" />
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="icon" type="icon/png" href="images/icon.png" />
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+ 
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      	*{
+      		margin: 0px;
+      		padding: 0px;
+	        font-family: 'Flamenco';
+	        font-size: 20px;
+      	}
+          /* Make the image fully responsive */
+          .carousel-inner img {
+               width: 100%;
+               height: 100%;
+            }
+         .nav-link:hover{
+         background: green;
+          }
+          #more {display: none;}
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      </style>
 
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
+	<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background: rgba(94,84,243,1);
+           background: -moz-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+           background: -webkit-gradient(left top, right top, color-stop(0%, rgba(94,84,243,1)), color-stop(100%, rgba(101,216,239,1)));
+           background: -webkit-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+           background: -o-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+           background: -ms-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+           background: linear-gradient(to right, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);">
+    <a href="" style="border-bottom: 2px solid orange" class="navbar-brand text-capitalize text-warning font-width-bold" href="index1.html">city data portal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active" style="padding: 5px 10px;">
+          <a class="nav-link" href="index1.html">Home</a>
+        </li>
+        <li class="nav-item" style="padding: 5px 10px;">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item" style="padding: 5px 10px;">
+          <a class="nav-link" href="explore.html">Explore City</a>
+        </li>
+        <li class="nav-item" style="padding: 5px 10px;">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li>
 
-	<div class="bgimg">
-		
-		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-			<div class="container">
-				<a href="" class="navbar-brand text-warning font-width-bold">CITY DATA PORTAL</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+        <div>
+            <button class="btn btn-success ml-auto text-white btn-md" data-toggle="modal" data-target="#myModal">Sign Up</button>
+          </div>
+      <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+      
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Sign Up</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+        
+        <!-- Modal body -->
+              <div class="modal-body">
+                 <form action="/action_page.php">
+                    <div class="form-group">
+                      <label for="email">Email address:</label>
+                      <input type="email" class="form-control" placeholder="Enter email" id="email" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                    </div>
+                    <div class="form-group form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Remember me
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+              </div>
+        
+        <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+    </div>
+    </nav>
+  </header>
+	<div id="demo" class="carousel slide" data-ride="carousel">
+		<ul class="carousel-indicators">
+			<li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+        </ul>
+        <div class="carousel-inner">
+        	<div class="carousel-item active">
+        		<img src="images/header1.jpg" alt="Van Vihar" width="1100" height="500">
+        		<div class="carousel-caption text-width-bold">
+        			<h3 class="text-width-bold">Van Vihar</h3>
+        			<p>Best place to visit in Bhopal.</p>
+        		</div>   
+        	</div>
+        	<div class="carousel-item">
+        		<img src="images/header2.jpg"  alt="Chicago" width="1100" height="500">
+        		<div class="carousel-caption">
+        			<h3 class="text-width-bold">Jehan Numa Palace</h3>
+        			<p>Heardly welcome, Bhopal.</p>
+        		</div>
+        	</div>
+        	<div class="carousel-item">
+        		<img src="images/header3.jpg" alt="New York" width="1100" height="500">
+        		<div class="carousel-caption">
+        			<h3 class="text-width-bold">Crescent Resort & Club</h3>
+        			<p>Best place for enjoy, Bhopal.</p>
+        		</div>   
+        	</div>
+        	<div class="carousel-item">
+        		<img src="images/header6.jpg" alt="Los Angeles" width="1100" height="500">
+        		<div class="carousel-caption">
+        			<h3 class="text-width-bold">Shiv Mandir</h3>
+        			<p>The liṅga at the Bhojasvāmin temple, Bhojpur(Bhopal).</p>
+        		</div>   
+        	</div>
+        	<div class="carousel-item">
+        		<img src="images/bhopal3.jpg" alt="Los Angeles" width="1100" height="500">
+        		<div class="carousel-caption">
+        			<h3 class="text-width-bold">Maharaja Bhoj</h3>
+        			<p>The King Of Bhopal.</p>
+        		</div>
+        	</div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        	<span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+        	<span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
-					<span class="navbar-toggler-icon">  </span>
-				</button>
-				<div class="collapse navbar-collapse text-center" id="collapsenavbar">
+<!--about us start-->
 
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a href="#" class="nav-link text-white">HOME</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link text-white">ABOUTUS</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link text-white">STORIES</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link text-white">EVENTS</a>
-						</li>
-						<li class="nav-item">
-							 <a href="#" class="nav-link text-white">CONTACT</a> 
-						</li>
-					</ul>
-				</div>
+<section>
+	
+	<div class="container-fluid">
+		<h1 class="text-center text-capitalize pt-5">about us</h1>
+		<hr class="w-25 mx-auto pt-5">
+		<div class="row mb-5">
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<img src="images/header1.jpg" class="img-fluid">
 			</div>
-		</nav>
-		<div class="container text-white text-center headerset">
-			<h2>City Data Portal</h2>
-			<h1>Welcome To City Of Lakes.</h1>
-			<button class="btn btn-warning text-white btn-lg">SIGN IN</button>
-		</div>
-	</div>
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<h1>who am i ?</h1>
+		        <hr class="bg-primary">
+                <p>
+                	The capital of Madhya Pradesh, Bhopal was built on the site of the 11th Century City of Bhojpal, founded by the Parmara King Bhoj (1000-1055). The city was originally known as Bhojpal, named after Bhoj and the dam (‘pal’) that he is said to have constructed to form the lakes surround<span id="dots">...</span><span id="more">ing Bhopal.Bhopal district was carved out of the erstwhile Sehore District of Bhopal division vide M.P.Govt. Notification No.2477/1977/Sa/One/ dated 13th September, 1972.The district derives its name from the district head-quarters town Bhopal which is also the capital of Madhya Pradesh. The etymology of the term Bhopal has been derived from its former name Bhojpal as would be evident form the following extract from the imperial Gazetter of Central India,1908 P.240.
 
-	<section class="container ourservices text-center">
-		
-		<div class="row rowsetting">
+                  “The name (Bhopal) is popularly derived from Bhojpal or Bhoj’s dam, the great dam which now holds up the Bhopal city lakes, and is said to have been built by a Minister of Raja Bhoj,the Parmar ruler of Dhar. The still greater work which formerly held up the Tal (lake) being attributed to this monarch himself. The name is, however, invariably pronounced, Bhupal and Dr. Fleet considers it to be derived simply from Bhupala, a King, the popular derivation being an instance of the striving after a meaning so common in such cases.”
 
-			<div class="col-lg-4 col-md-4 col-sm-4 col-12 d-block m-auto ">
-				<div class="imgsetting d-block m-auto"><i class="fa fa-map-marker" aria-hidden="true"></i>		
-				</div>
-				<h2><a href="#">Cityguide</a></h2>
-				<p>Our Bhopal city guide covers various aspects of life in the cultural capital of Madhya Pradesh. Check out this Information guide on Bhopal city.</p>
-				
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto ">
-				<div class="imgsetting d-block m-auto"><i class="fa fa-star" aria-hidden="true"></i>		
-				</div>
-				<h2><a href="#">Events</a></h2>
-				<p>Plan your evenings better and find out what’s happening in Indore.
-                Get Information on event, parties, exhibitions, seminars , workshop.</p>
-				
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto ">
-				<div class="imgsetting d-block m-auto"><i class="fa fa-bullhorn" aria-hidden="true"></i>
-		
-				</div>
-				<h2><a href="#">Stories</a></h2>
-				<p>The capital of Madhya Pradesh, Bhopal was built on the site of the 11th Century City of Bhojpal, founded by the Parmara King Bhoj (1000-1055).</p>
-				
-			</div>
-			
-		</div>
-	</section>
+                  Initially the lake was quite big but as time has elapsed only a small portion of it has remained to be seen as “Bada Talab” i.e. the upper lake. Since long there is a famous saying about Bhopal lake, “Talon mein tal Bhopal tal, baki sab tallaiya”.
 
-	<section class="Education bg-light">
-		<div class="container text-center">
-			<h2>EDUCATIONS</h2>
-			<p>Best Education Platforms In Bhopal</p>
+                  There is a legend that Bhopal, for long, was a part of “Mahakautar” a barrier of dense forests and hills, outlined by the Narmada separating the north, from north to south.Early history of the territory comprising Bhopal district was in oblivion. It was in the tenth century that the names of Rajput clans began to appear in Malwa. The most notable of them was Raja Bhoj who was both a great scholar and a great warrior.After the invasion by Altamash the Mohammadans began to infiltrate into Malwa which included Bhopal as a part. In 1401 Dilawar Khan Ghori took charge of this territory. He made Dhar as the capital of his kingdom. He was succeeded by his son.
 
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
-					<div class="card">
-						<img src="images/university.jpg" class="card-img img-fluid">
-						<div class="card-body">
-							<h2 class="card-title">University</h2>
-							<p class="card-text">Govt. & Private Universities In Bhopal</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
-					<div class="card">
-						<img src="images/school1.jpg" class="card-img img-fluid">
-						<div class="card-body">
-							<h2 class="card-title">Schools</h2>
-							<p class="card-text">Govt. & Private Schools In Bhopal</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto">
-					<div class="card">
-						<img src="images/coaching.jpg" class="card-img img-fluid">
-						<div class="card-body">
-							<h2 class="card-title">Coaching Institute</h2>
-							<p class="card-text"> Famous Coaching Institute In Bhopal</p>
-						</div>
-					</div>
-				</div>
+                  In the beginning of 14th century a Gond warrior called Yadoram established the Gond Kingdom with his headquarters at Garha Mandla. The Gond dynasty had a number of powerful kings like Madan Shah, Gorakhdas, Arjundas and Sangram Shah. During the Mughal invasion in Malwa a sizeable area of the territory comprising Bhopal state was under the possession of Gond Kingdom. These territories were known as Chaklas of which Chakla Ginnour was one consisting of 750 villages. Bhopal was a part of it. The Gond king Nizam Shah was the ruler of this area.
 
-			</div>
-		</div>
-	</section>
-
-		
-
-	<div id="footer" style="text-align: center;">
-            <p align="center">All Right Reserved &copy;2020 Designed By:Suraj Bhan Dangi</p>
-
-        </div><!--End of Footer-->
-
-
-
-
-
+                  Nizam Shah died of poisoning by Chain Shah. His widow, Kamlavati and son Naval Shah became helpless. Naval Shah was a minor then. After the death of Nizam Shah, Rani Kamlavati came to an agreement with Dost Mohammed Khan to manage the affairs of the xvi state. Dost Mohammed Khan was a shrewd and cunning Afghan Sardar who began acquiring smaller principalities. After the death of Rani Kamlavati. Dost Mohammed Khan seized the fort of Ginnor, curbed the rebels, bestowing the grants according to their degree of control upon the rest and earned their gratitude.</span>
+                </p>
+                <button onclick="myFunction()" class="btn bg-primary text-white" id="myBtn">Read more</button>
 
 <script>
-		function slideshow(){
-			var x = document.getElementById('check-class');
-			if(x.style.display === "none"){
-				x.style.display = "block";
-			}else{
-				x.style.display = "none";
-			}
-		}
-	</script>
+   function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+   }
+</script>
+                
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--about us end-->
+
+<!--start explore-->
+
+<section>
+	
+	<div class="container">
+		<h1 class="text-center text-capitalize pt-5">Explore City</h1>
+		<hr class="w-25 mx-auto pt-5">
+		<div class="row text-center mb-5">
+			<div class="col-lg-4  col-md-4 col-12 mb-4">
+		        <div class="card" style="">
+                    <img class="card-img-top" src="images/university.jpg" alt="Card image">
+                    <div class="card-body">
+                       <h4 class="card-title">Eduction</h4>
+                       <p class="card-text">Best Universities & Schools In Bhopal.</p>
+                       <a href="education.html" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-4 col-12 mb-4">
+		        <div class="card" style="">
+                    <img class="card-img-top" src="images/kid.jpg" alt="Card image">
+                    <div class="card-body">
+                       <h4 class="card-title">Hospital</h4>
+                       <p class="card-text">Best multispeciality hospital in Bhopal.</p>
+                       <a href="https://www.aiimsbhopal.edu.in/" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-4 col-12 mb-4">
+		        <div class="card" style="">
+                    <img class="card-img-top" src="images/connectivity.jpg" alt="Card image">
+                    <div class="card-body">
+                       <h4 class="card-title">Connectivity</h4>
+                       <p class="card-text">Best connectivity services in Bhopal.</p>
+                       <a href="https://www.bhopalairport.com/" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-4 col-12 mb-4">
+		        <div class="card" style="">
+                    <img class="card-img-top" src="images/religious.jpg" alt="Card image">
+                    <div class="card-body">
+                       <h4 class="card-title">Religious Places</h4>
+                       <p class="card-text">Most religious places in Bhopal.</p>
+                       <a href="PLACES.html" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-4 col-12 mb-4">
+		        <div class="card" style="">
+                    <img class="card-img-top" src="images/hotel.jpg" alt="Card image">
+                    <div class="card-body">
+                       <h4 class="card-title">Hotels & Restaurants</h4>
+                       <p class="card-text">Best hotels & restaurants in Bhopal.</p>
+                       <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-4 col-12 mb-4">
+		        <div class="card" style="">
+                    <img class="card-img-top" src="images/famous.jpg" alt="Card image">
+                    <div class="card-body">
+                       <h4 class="card-title">Famous Places To Visit</h4>
+                       <p class="card-text">Best places to visit in Bhopal.</p>
+                       <a href="famous.html" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+</section>
+
+<!--explore end-->
+
+<!--contact demo start-->
+
+<section style="background: rgba(94,84,243,1);
+    background: -moz-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(94,84,243,1)), color-stop(100%, rgba(101,216,239,1)));
+    background: -webkit-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+    background: -o-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+    background: -ms-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+    background: linear-gradient(to right, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);">
+	<article class="py-5 text-center">
+		<div>
+			<h3 class="display-4 text-white">+91 7697033163</h3>
+			<p class="text-white ">If you want to know more call us now.</p>
+			<button class="btn btn-warning">Contact Now</button>
+		</div>
+	</article>
+</section>
+
+<!--contact demo end-->
+
+<!--gallery start-->
+
+<section>
+
+	<div class="container">
+		<h1 class="text-center text-capitalize pt-5">Gallery</h1>
+		<hr class="w-25 mx-auto pt-5">
+		<div class="row mb-5">
+			<div class="col-lg-4 col-md-4 col-12 mb-4">
+				<img src="images/g6.png" class="img-fluid">
+			</div>
+			<div class="col-lg-4 col-md-4 col-12 mb-4">
+				<img src="images/g4.jpg" class="img-fluid">
+			</div>
+			<div class="col-lg-4 col-md-4 col-12 mb-4">
+				<img src="images/g2.jpg" class="img-fluid">
+			</div>
+			<div class="col-lg-4 col-md-4 col-12 mb-4">
+				<img src="images/g1.jpeg" class="img-fluid">
+			</div>
+			<div class="col-lg-4 col-md-4 col-12 mb-4">
+				<img src="images/g5.png" class="img-fluid">
+			</div>
+			<div class="col-lg-4 col-md-4 col-12 mb-4">
+				<img src="images/g7.jpg" class="img-fluid">
+			</div>
+			<div class="col-lg-4 col-md-4 col-12 mb-4">
+				<img src="images/header1.jpg" class="img-fluid">
+			</div>
+			<div class="col-lg-4 col-md-4 col-12 mb-4">
+				<img src="images/g3.jpg" class="img-fluid">
+			</div>
+			<div class="col-lg-4 col-md-4 col-12 bg-primary mb-4">
+				<img src="images/logo.png" class="img-fluid">
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--gallery end-->
+
+<!--register form start-->
+
+<section style="background: rgba(94,84,243,1);
+    background: -moz-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(94,84,243,1)), color-stop(100%, rgba(101,216,239,1)));
+    background: -webkit-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+    background: -o-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+    background: -ms-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+    background: linear-gradient(to right, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);">
+	<article class="py-5 ">
+		<div class="text-center">
+			<h3 class="display-4 text-white">Want To Join</h3>
+			<p class="text-white ">If you want to know more call us now.</p>
+			<button class="btn btn-warning " data-toggle="modal" data-target="#myModal">Join Now</button>
+		</div>
+
+		  <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+      
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Sign Up</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+        
+        <!-- Modal body -->
+              <div class="modal-body">
+                 <form action="/action_page.php">
+                    <div class="form-group">
+                      <label for="email">Email address:</label>
+                      <input type="email" class="form-control" placeholder="Enter email" id="email" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                    </div>
+                    <div class="form-group form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Remember me
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+              </div>
+        
+        <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+	</article>
+</section>
+
+<!--register form end-->
+
+<!--contact us start-->
+
+<section>
+	<div class="container mb-5">
+		<h1 class="text-center text-capitalize pt-5">Contact Us</h1>
+		<hr class="w-25 mx-auto pt-5">
+		<div class="w-50 mx-auto">
+		 <form action="/action_page.php">
+                    <div class="form-group">
+		 	          <label for="text">Your Name:</label>
+                      <input type="text" class="form-control" placeholder="Enter Name" id="name" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email address:</label>
+                      <input type="email" class="form-control" placeholder="Enter email" id="email" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Mobile No.:</label>
+                      <input type="number" class="form-control" placeholder="Enter password" id="pwd">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                    </div>
+                    <div class="form-group">
+                    	<label>Textarea:</label>
+                    	<textarea class="form-control"></textarea>
+                    </div>
+                    <div class="form-group form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Remember me
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+              </div>
+
+
+	</div>
+</section>
+
+<!--contact us end-->
+
+<!--footer start-->
+
+<footer>
+	
+	<p class="bg-dark text-white text-center" style="background: rgba(94,84,243,1);
+    background: -moz-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(94,84,243,1)), color-stop(100%, rgba(101,216,239,1)));
+    background: -webkit-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+    background: -o-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+    background: -ms-linear-gradient(left, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);
+    background: linear-gradient(to right, rgba(94,84,243,1) 0%, rgba(101,216,239,1) 100%);">All Right Reserved &copy;2020 Designed By:Suraj Bhan Dangi</p>
+</footer>
+
+
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
